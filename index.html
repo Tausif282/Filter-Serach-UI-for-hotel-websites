@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Filter</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="container">
+        <div class="heading"><h2>Price Range</h2></div>
+        <!-- FILTER -->
+        <div class="slider">
+          <input
+            type="range"
+            min="100"
+            max="10000"
+            value="20"
+            oninput="rangeValue.innerText = this.value"
+          />
+          <p id="rangeValue">20</p>
+        </div>
+        <!-- radio choice -->
+        <div class="radio-option">
+          <label class="radio">
+            <input type="radio" value="Pay At Hotel" name="payment" />
+
+            <span>Pay At Hotel</span>
+          </label>
+          <label class="radio">
+            <input type="radio" value="Accept Local IDs" name="payment" />
+
+            <span>Accept Local IDs</span>
+          </label>
+          <label class="radio">
+            <input type="radio" value="For Group Travellers" name="payment" />
+
+            <span>For Group Travellers</span>
+          </label>
+        </div>
+        <!-- star rating -->
+        <div class="star-rating">
+          <label class="star">
+            <input type="radio" value="1 star" name="rate" />
+
+            <span class="1">1 star</span>
+          </label>
+          <label class="star">
+            <input type="radio" value="2 star" name="rate" />
+
+            <span class="2">2 star</span> </label
+          ><label class="star">
+            <input type="radio" value="3 star" name="rate" />
+
+            <span class="3">3 star</span> </label
+          ><label class="star">
+            <input type="radio" value="4 star" name="rate" />
+
+            <span class="4">4 star</span> </label
+          ><label class="star">
+            <input type="radio" value="5 star" name="rate" />
+
+            <span class="5">5 star</span>
+          </label>
+        </div>
+        <!-- Amenities -->
+        <div class="amenities">
+          <div class="heading"><h2>Amenities</h2></div>
+          <div class="container">
+            <label class="amenities-check">
+              <input type="checkbox" class="check" />
+              <span class="checkmark">A/C</span>
+            </label>
+            <label class="amenities-check">
+              <input type="checkbox" class="check" />
+              <span class="checkmark"></span>
+              Airport Transport
+            </label>
+            <label class="amenities-check">
+              <input type="checkbox" class="check" />
+              <span class="checkmark"></span>
+              Dining
+            </label>
+            <label class="amenities-check">
+              <input type="checkbox" class="check" />
+              <span class="checkmark"></span>
+              Free Internet
+            </label>
+            <label class="amenities-check">
+              <input type="checkbox" class="check" />
+              <span class="checkmark"></span>
+              Health Spa
+            </label>
+            <label class="amenities-check">
+              <input type="checkbox" class="check" />
+              <span class="checkmark"></span>
+              Restaurent
+            </label>
+            <label class="amenities-check">
+              <input type="checkbox" class="check" />
+              <span class="checkmark"></span>
+              Smoking Room
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

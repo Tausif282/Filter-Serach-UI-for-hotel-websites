@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #333;
+}
+
+#main {
+    position: absolute;
+    height: 120vh;
+    width: 40vw;
+    border-left: #00acee;
+    background: rgb(255, 255, 255);
+}
+
+body {
+    background: #dce6ea;
+}
+
+.container {
+    /* position: relative;*/
+    /* height: 100vh; */
+    /* width: 40vw; */
+}
+
+.container .heading {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 70px;
+
+    /* margin-bottom: 1px; */
+}
+
+.slider {
+    position: relative;
+    /* top: 50%;
+    left: 50%; */
+    top: 50px;
+    margin-left: 230px;
+    transform: translate(-50%, -50%);
+    /* width: 250px;
+    height: 30px; */
+    padding: 20px;
+    /* background: #f5f5f5; */
+    /* border: 1px solid #00acee; */
+    /* border-radius: 20px; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.slider p {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding-left: 20px;
+    color: #00eeb2;
+}
+
+.slider input[type="range"] {
+    -webkit-appearance: none !important;
+    width: 200px;
+    height: 1px;
+    background: #00eeb2;
+    ;
+    border: none;
+    outline: none;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 20px;
+    height: 20px;
+    background: #f5f5f5;
+    border: 2px solid #00eeb2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb:hover {
+    background: #00eeb2;
+}
+
+.radio-option {
+    position: absolute;
+    top: 150px;
+    left: 70px;
+
+}
+
+.radio {
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: flex;
+    padding-bottom: 10px;
+    padding-right: 40px;
+
+    /* vertical-align: middle; */
+    color: #333;
+    ;
+
+}
+
+.radio span {
+    padding-left: 15px;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #00eeb2;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+/* star rating */
+
+.star-rating {
+    position: relative;
+    top: 200px;
+    left: 70px;
+    /* margin: 0; */
+}
+
+/* .star label input {
+    display: none;
+} */
+
+.star-rating .star input[type="radio"] {
+    display: none;
+}
+
+
+.star-rating .star span {
+    /* display: none; */
+    display: inline-block;
+    border: 1px solid #444;
+    background: #fff;
+    padding: 7px 20px;
+    margin: 0px;
+    color: #333;
+    /* border-style: solid; */
+    /* border-style: ridge; */
+    /* border-color: aqua; */
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.582);
+}
+
+.star-rating .star input:checked~span {
+    color: #333;
+    border: 1px solid #00ff40;
+    background: #00eeb2;
+    box-shadow: #00acee;
+}
+
+/* Amenities */
+
+.amenities .heading {
+    position: relative;
+    top: 11rem;
+    font-size: 18px;
+}
+
+.amenities .container {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    top: 12rem;
+    left: 70px;
+}
+
+.amenities-check {
+    /* display: flex; */
+    padding: 7px;
+}
+
+.checkmark {
+    padding-left: 10px;
+    z-index: -10000;
+    /* display: none; */
+}
+
+.check {
+    zoom: 1.3;
+}
+
+.amenities-check .p {
+    size: 20px;
+}
+
+* {
+    font-size: 20px;
+
+}
+
+
+
+
+input[type='checkbox']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='checkbox']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #00eeb2;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
